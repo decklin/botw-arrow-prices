@@ -3,10 +3,16 @@
 <title>BoTW Arrow Prices</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cantarell">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="vendor/tablesort.css">
 <meta name="viewport" content="width=600, initial-scale=0.625">
+
 <h1>Breath of the Wild: Arrow Prices</h1>
-<table>
-  <tr>
+
+<p>Click on any heading to sort (reload to remove sorting). Hover over
+any multiple-arrow price to do the math for the per-arrow price.
+
+<table id=arrow-prices>
+  <tr data-sort-method=none>
     <td></td>
     <th colspan=2 class=arrow-type>Regular</th>
     <th colspan=2 class=arrow-type>Fire</th>
@@ -16,35 +22,35 @@
   </tr>
   <tr>
     <td class=shop>Kakariko</td>
-    <td class=bad-price>5</td><td><span title=4>20<wbr>/5</span></td>
-    <td class=bad-price>20</td><td><span title=16>80<wbr>/5</span></td>
+    <td data-sort=4>20<wbr>/5</td><td>5</td>
+    <td data-sort=16>80<wbr>/5</td><td class=bad-price>20</td>
     <td colspan=2></td>
     <td colspan=2></td>
     <td colspan=2></td>
   </tr>
   <tr>
     <td class=shop>Hateno</td>
-    <td colspan=2><span title=4>20<wbr>/5</span></td>
+    <td data-sort=4 colspan=2>20<wbr>/5</td>
     <td colspan=2></td>
     <td colspan=2></td>
     <td colspan=2></td>
-    <td class=bad-price>50</td><td><span title=35>350<wbr>/10</span></td>
+    <td data-sort=35>350<wbr>/10</td><td class=bad-price>50</td>
   </tr>
   <tr>
     <td class=shop>Zora</td>
-    <td colspan=2><span title=4>20<wbr>/5</span></td>
+    <td data-sort=4 colspan=2>20<wbr>/5</td>
     <td colspan=2></td>
-    <td class=bad-price>20</td><td><span title=16>80<wbr>/5</span></td>
+    <td data-sort=16>80<wbr>/5</td><td class=bad-price>20</td>
     <td colspan=2></td>
     <td colspan=2></td>
   </tr>
   <tr>
     <td class=shop>Rito</td>
-    <td colspan=2><span title=4>20<wbr>/5</span></td>
+    <td data-sort=4 colspan=2>20<wbr>/5</td>
     <td colspan=2></td>
     <td colspan=2></td>
     <td colspan=2></td>
-    <td colspan=2 class=bad-price><span title=40>200<wbr>/5</span></td>
+    <td data-sort=40 colspan=2 class=bad-price>200<wbr>/5</td>
   </tr>
   <tr>
     <td class=shop>Goron</td>
@@ -56,53 +62,90 @@
   </tr>
   <tr>
     <td class=shop>Gerudo</td>
-    <td colspan=2><span title=4>20<wbr>/5</span></td>
-    <td colspan=2 class=good-price><span title=14>140<wbr>/10</span></td>
-    <td colspan=2 class=good-price><span title=14>140<wbr>/10</span></td>
-    <td colspan=2 class=good-price><span title=14>140<wbr>/10</span></td>
-    <td colspan=2 class=good-price><span title=30>600<wbr>/20</span></td>
+    <td data-sort=4 colspan=2>20<wbr>/5</td>
+    <td data-sort=14 colspan=2 class=good-price>140<wbr>/10</td>
+    <td data-sort=14 colspan=2 class=good-price>140<wbr>/10</td>
+    <td data-sort=14 colspan=2 class=good-price>140<wbr>/10</td>
+    <td data-sort=30 colspan=2 class=good-price>600<wbr>/20</td>
   </tr>
   <tr>
     <td class=shop>Lurelin</td>
-    <td colspan=2><span title=4>20<wbr>/5</span></td>
+    <td data-sort=4 colspan=2>20<wbr>/5</td>
     <td colspan=2></td>
     <td colspan=2></td>
-    <td colspan=2 class=good-price><span title=14>140<wbr>/10</span></td>
+    <td data-sort=14 colspan=2 class=good-price>140<wbr>/10</td>
     <td colspan=2></td>
   </tr>
   <tr>
     <td class=shop>Korok</td>
-    <td colspan=2><span title=4>20<wbr>/5</span></td>
+    <td data-sort=4 colspan=2>20<wbr>/5</td>
     <td colspan=2></td>
     <td colspan=2></td>
-    <td colspan=2><span title=16>80<wbr>/5</span></td>
+    <td data-sort=16 colspan=2>80<wbr>/5</td>
     <td colspan=2></td>
   </tr>
   <tr>
     <td class=shop>Tarrey</td>
-    <td colspan=2 class=good-price><span title=3.5>35<wbr>/10</span></td>
-    <td colspan=2 class=good-price><span title=14>140<wbr>/10</span></td>
-    <td colspan=2 class=good-price><span title=14>140<wbr>/10</span></td>
-    <td colspan=2 class=good-price><span title=14>140<wbr>/10</span></td>
-    <td colspan=2><span title=35>350<wbr>/10</span></td>
+    <td data-sort=3.5 colspan=2 class=good-price>35<wbr>/10</td>
+    <td data-sort=14 colspan=2 class=good-price>140<wbr>/10</td>
+    <td data-sort=14 colspan=2 class=good-price>140<wbr>/10</td>
+    <td data-sort=14 colspan=2 class=good-price>140<wbr>/10</td>
+    <td data-sort=35 colspan=2>350<wbr>/10</td>
   </tr>
   <tr>
-    <td class=shop><span title="Dueling Peaks, Foothill, Lakeside, Outskirt, Riverside, Wetland, Woodland">Beedle A</span></td>
-    <td class=bad-price>6</td><td class=bad-price><span title=6>30<wbr>/5</span></td>
+    <td class=shop>Beedle 1</td>
+    <td data-sort=6 class=bad-price>30<wbr>/5</td><td class=bad-price>6</td>
     <td colspan=2></td>
     <td colspan=2></td>
     <td colspan=2></td>
     <td colspan=2></td>
   </tr>
   <tr>
-    <td class=shop><span title="Akkala, Gerudo, Highland, Rito, Serenne, Snowfield, Tabantha">Beedle B</span></td>
-    <td class=bad-price>6</td><td class=bad-price><span title=4.5>45<wbr>/10</span></td>
+    <td class=shop>Beedle 2</td>
+    <td data-sort=4.5 class=bad-price>45<wbr>/10</td><td class=bad-price>6</td>
+    <td colspan=2></td>
+    <td colspan=2></td>
+    <td colspan=2></td>
+    <td colspan=2></td>
+  </tr>
+  <tr>
+    <td class=shop>Botrick</td>
+    <td data-sort=4>20<wbr>/5</td><td>5</td>
+    <td colspan=2 class=bad-price>20</td>
+    <td colspan=2 class=bad-price>20</td>
+    <td colspan=2></td>
+    <td colspan=2></td>
+  </tr>
+  <tr>
+    <td class=shop>Gartan</td>
+    <td data-sort=4 colspan=2>20<wbr>/5</td>
     <td colspan=2></td>
     <td colspan=2></td>
     <td colspan=2></td>
     <td colspan=2></td>
   </tr>
 </table>
-<p>Mouse over any multiple-arrow price to see the per-arrow price.
-<p>Mouse over a Beedle type to see which stables have that inventory.
-<p>Background by <a href="https://www.flickr.com/photos/bagogames/29817759414">bagogames</a>, filtered.
+
+<p>Traveling shops are found at or near:
+<ul>
+  <li>Beedle (arrow inventory 1): Dueling Peaks, Foothill, Lakeside, Outskirt, Riverside, Wetland, and Woodland stables
+  <li>Beedle (arrow inventory 2): Akkala (both), Gerudo, Highland, Rito, Serenne, Snowfield, and Tabantha stables
+  <li>Botrick: Outskirt stable
+  <li>Gartan: Gerudo stable
+</ul>
+
+<p><tt><a href="https://github.com/tristen/tablesort">tablesort.js</a></tt>
+  by Tristen Forsythe Brown. Background
+  by <a href="https://www.flickr.com/photos/bagogames/29817759414">bagogames</a>,
+  filtered.
+
+<script src="vendor/tablesort-with-number.min.js"></script>
+<script>
+  new Tablesort(document.getElementById('arrow-prices'));
+</script>
+
+<script>
+  document.querySelectorAll('#arrow-prices td[data-sort]').forEach(function(td) {
+    td.setAttribute('title', td.getAttribute('data-sort'));
+  });
+</script>
