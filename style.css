@@ -3,8 +3,7 @@ html {
   color: black;
   font-family: 'Cantarell', sans-serif;
   font-size: 12pt;
-  background-image: url("hyrule-bg-light.jpg");
-  background-repeat: repeat-y;
+  background: url("hyrule-bg-light.jpg") #dadfd9 repeat-y center;
 }
 @media screen and (min-width: 38em) {
   body { width: 38em; margin-left: auto; margin-right: auto; }
